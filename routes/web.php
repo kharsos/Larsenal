@@ -7,6 +7,11 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\clientCategoryController;
+
+
+
 
 Route::get('admin', [AuthController::class,'login_admin'] );
 Route::post('admin', [AuthController::class,'auth_login_admin'] );
@@ -46,8 +51,15 @@ Route::group(['Middleware' => 'admin'], function()
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/category/{id}', [clientCategoryController::class, 'show'])->name('subcategory.show');
+
+
+
+
+// Route::get('/', function () {
+//     return view('client.home');
+// });
+
 
 

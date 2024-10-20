@@ -1,0 +1,24 @@
+/* Add sidebar and layout styles here */
+.sidebar {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #007bff;
+}
+
+.content {
+    margin-top: 20px; /* Adjust this to add spacing below the sidebar */
+}

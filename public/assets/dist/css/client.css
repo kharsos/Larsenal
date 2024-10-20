@@ -1,0 +1,21 @@
+/* Custom styles for the header */
+header {
+    background-color: #343a40;
+    color: white;
+}
+
+.search-bar input {
+    border-radius: 0;
+}
+
+.search-bar button {
+    border-radius: 0;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+}
+
+.navbar-dark .nav-link {
+    color: white;
+}
